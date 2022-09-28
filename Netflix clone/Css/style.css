@@ -1,0 +1,563 @@
+:root {
+  --primary-color: #e50914;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("../fonts/NetflixSansRegular.ttf");
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Netflix Sans";
+  -webkit-font-smoothing: antialiased;
+  background: #000000;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  width: 100%;
+  height: 98vh;
+  position: relative;
+  background: url(img/main.jpg) no-repeat center center/cover;
+}
+
+.showcase::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: inset 30px 10px 250px #000000, inset -30px -10px 250px #000000;
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+.showcase-top img {
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.showcase-top a {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  top: 20%;
+}
+
+.showcase-content-email {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  top: 20%;
+  height: 4rem;
+}
+
+.showcase-content-email .inputclass {
+  display: inline-flex;
+}
+
+.email-holder {
+  width: 27rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.showcase-content h1 {
+  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+
+.showcase-content p {
+  /* text-transform: uppercase; */
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.25;
+  margin: 0 0 1.5rem;
+}
+
+.showcase-content h4 {
+  /* text-transform: uppercase; */
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+/* buttons */
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 2rem;
+  padding: 1.5rem 2.1rem;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  font-size: 1.5rem;
+  padding: 1.1rem 1.8rem;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+}
+
+/* ########## section ########## */
+
+.tabs {
+  height: 600px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 1200px;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* background: #000000; */
+}
+
+.tabs .text1 {
+  text-align: center;
+  position: absolute;
+  /* left: 1rem; */
+  text-align: left;
+  /* font-size: 2.1rem; */
+}
+
+.text1 h1,
+.text2 h1,
+.text3 h1,
+.text4 h1 {
+  font-size: 3.1rem;
+  margin-bottom: 1rem;
+}
+
+.text1 p,
+.text2 p,
+.text3 p,
+.text4 p {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.tabs .img1 {
+  display: inline-block;
+  height: 50%;
+  width: 40%;
+  margin-bottom: 7rem;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+  /* background: #000000; */
+}
+.tabs .gif {
+  display: inline-block;
+  height: 10%;
+  width: 29%;
+  position: absolute;
+  right: 0;
+  margin-right: 3.9rem;
+  margin-bottom: 16rem;
+  z-index: 1;
+}
+
+.tabsno2 {
+  height: 500px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 8rem;
+  /* background: #000000; */
+}
+
+.tabsno2 .img2 {
+  display: inline-block;
+  height: 10%;
+  width: 20%;
+  margin-bottom: 22rem;
+  margin-left: 7rem;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.tabsno2 .text2 {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  /* font-size: 2.1rem; */
+}
+
+.tabsno2 .gif2 {
+  display: inline-block;
+  height: 40%;
+  width: 18%;
+  position: absolute;
+  left: 11%;
+  /* margin-right: 9rem; */
+  margin-bottom: 12rem;
+  z-index: 1;
+}
+
+.gif2 img {
+  border-radius: 1rem;
+}
+
+.tabsno3 {
+  height: 400px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 8rem;
+  /* background: #000000; */
+}
+
+.tabsno3 .img3 {
+  display: inline-block;
+  height: 55%;
+  width: 45%;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.tabsno3 .text3 {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.tabsno3 .gif3 {
+  display: inline-block;
+  height: 40%;
+  width: 28%;
+  position: absolute;
+  right: 9%;
+  z-index: 1;
+}
+
+.tabsno4 {
+  height: 500px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 8rem;
+  /* background: #000000; */
+}
+
+.tabsno4 .text4 {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  /* margin-top: 1rem; */
+  margin-left: 2rem;
+}
+
+.tabsno4 .img4 {
+  display: inline-block;
+  height: 55%;
+  width: 45%;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+/* ################ footer ############# */
+
+.foot {
+  border-top: 10px solid rgb(44, 43, 43);
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.foot1 {
+  width: 100%;
+  padding-top: 4rem;
+  background: rgba(0, 0, 0, 0.95);
+  /* margin-top: 5rem; */
+  height: 18.2rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+.foot .footer,
+.foot1 .footer {
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  padding-bottom: 5rem;
+  margin-left: 15%;
+}
+
+.foot1 .container {
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 15%;
+}
+
+.foot .container {
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  color: #757575;
+  margin-left: 15%;
+}
+.foot1 .footer .a1 a,
+.foot1 .footer .a2 a,
+.foot1 .footer .a3 a,
+.foot1 .footer .a4 a {
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1rem;
+  margin-right: 8rem;
+  font-size: 1rem;
+  /* justify-content: left; */
+}
+
+.foot .footer .a1 a,
+.foot .footer .a2 a,
+.foot .footer .a3 a,
+.foot .footer .a4 a {
+  display: flex;
+  text-decoration: none;
+  color: #757575;
+  padding-top: 1rem;
+  margin-right: 8rem;
+  font-size: 1rem;
+}
+
+.call {
+  border-bottom: 1px solid #999;
+  cursor: pointer;
+}
+
+.z {
+  padding-bottom: 2rem;
+  font-size: 1rem;
+  color: #757575;
+  margin-left: 15%;
+}
+
+/* ############# Sign in page ############## */
+
+.showcase1 {
+  width: 100%;
+  height: 125vh;
+  position: relative;
+}
+
+.sign_body {
+  background: url(img/page2.jpg) no-repeat center center/cover;
+}
+
+.showcase1::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 10px 5px 250px #000000, inset -10px -5px 250px #000000;
+}
+
+.form {
+  max-width: 34%;
+  position: relative;
+  margin: auto;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.75);
+  height: 650px;
+  border-radius: 0.3rem;
+}
+
+.form .ab {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 0.8rem;
+}
+
+.form .inputs {
+  content: " ";
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 3rem 4.5rem;
+}
+
+.form .inputs .form-group {
+  display: inline-block;
+  background: #333;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form .inputs .signin {
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 0.3rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form .inputs .check {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+.check .remember {
+  /* display: inline-block; */
+  float: left;
+}
+
+.check .link {
+  /* display: inline-block; */
+  float: right;
+  color: #999;
+}
+
+.link:hover {
+  border-bottom: 1px solid #999;
+}
+
+.facebok {
+  margin-top: 3rem;
+}
+.facebok .sub-face {
+  display: inline-block;
+  font-size: 1rem;
+  color: #999;
+}
+
+.new-user {
+  display: inline-flex;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+
+.new-user h4 {
+  font-weight: lighter;
+  color: #999;
+  padding-right: 0.3rem;
+}
+
+.newone:hover {
+  border-bottom: 1px solid #fff;
+}
